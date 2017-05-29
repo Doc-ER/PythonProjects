@@ -1,4 +1,5 @@
 import os
+import sys
 import re
 import pandas as pd
 
@@ -68,4 +69,19 @@ def OutPutAllExcelFiles(rulerFile):
 	ReadAllExcelFiles(rulerHead)
 		
 if __name__== '__main__':
-	OutPutAllExcelFiles(rulerFile="3工作簿2.xls")	
+	rulerFile = sys.argv[1]#将终端第二个参数作为rulerFile传递给python3
+	OutPutAllExcelFiles(rulerFile)	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
