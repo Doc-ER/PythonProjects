@@ -71,8 +71,9 @@ def ReadAllExcelFiles(rulerHead):
 							control=False
 							print("以下文件抬头不统一：{0}".format(file))
 							break
+					
 				else:#有合并单元格的话
-					#因为xlrd.open读取的每一行，故要去除第一列
+					#因为xlrd.open读取的每一行，与pd.read_excel比需要减一个第一列的列数
 					if not len(df.columns)== len(rulerHead[0][0])-1:
 					
 						control=False
