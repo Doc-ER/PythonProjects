@@ -5,7 +5,7 @@ import re
 
 df = pd.read_excel("testData.xls", sheetname = "Sheet1", index_col=0)
 
-def getThePromote(data = data, groups = groups, grade = grade, weight = weight):
+def getThePromote(data, groups, grade, weight):
 	for group in groups:
 	groupCol = list()
 		for col in data.columns:
